@@ -2,7 +2,7 @@
 
 ### Routes
 - [x] **ProductListing Page** – Displays products with option to add to cart  
-- [x] **Cart Page** – Displays list of products added to the cart  
+- [ ] **Cart Page** – Displays list of products added to the cart  
 
 ###  Global Cart State
 - [x] Created `CartContext` using React’s `useContext`  
