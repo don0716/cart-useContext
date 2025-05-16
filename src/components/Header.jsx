@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import CartStatus from "./CartStatus"
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
                                 <Link to={`/`} className="nav-link">Products</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={`/cart`} className="nav-link">Cart</Link>
+                                <Link to={`/cart`} className="nav-link">Cart {<CartStatus />} </Link>
                             </li>
                         </ul>
                     </div>

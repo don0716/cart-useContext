@@ -4,7 +4,7 @@ import useCart from "../contexts/CartContext"
 
 
 const ProductListing = () => {
-    const {products, setProducts} = useCart()
+    const {products, setProducts, handleAddToCart} = useCart()
     const [newProduct, setNewProduct] = useState({
         id: "",
         name: "",
@@ -42,7 +42,9 @@ const ProductListing = () => {
                                     <div className="card-body">
                                         <h5>{prod.name}</h5>
                                         <h5>{prod.price}</h5>
+                                        
                                     </div>
+                                    <button onClick={() => handleAddToCart(prod)} className="btn btn-primary btn-sm m-2">Add To Cart</button>
                                     </div>
                               </div>
                         ))
